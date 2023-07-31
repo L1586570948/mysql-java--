@@ -1,0 +1,42 @@
+CREATE table Commodity_Information(
+	Cid VARCHAR(50),
+	Cname VARCHAR(50),
+	Cprice double,
+	Type VARCHAR(50),
+	Cinventory int
+);
+
+
+CREATE table User_Information(
+	Uid VARCHAR(50),
+	Account VARCHAR(50),
+	Password VARCHAR(50),
+	Balance double
+);
+
+CREATE TABLE History(
+	Uid VARCHAR(50),
+	Cname VARCHAR(50),
+	Browernow datetime
+);
+
+CREATE TABLE Shopping(
+	Uid VARCHAR(50),
+	Cname VARCHAR(50),
+	Cprice DOUBLE,
+	number int
+);
+
+create table collection(
+    Uid varchar(50),
+		Type varchar(50),
+		Cname varchar(50),
+		Cprice double ,
+		Caddtime   datetime
+		);
+
+
+INSERT INTO user_information VALUES('11111','小明','111222',100),('222222','小白','222333',1000),('33333','张三','123456',0),('44444','小林','666666',10000),('55555','苏洛','888888',9999.99);
+
+
+INSERT INTO commodity_information (Cid,Cname,Cprice,Type,Cinventory) values('001', '荣耀X50', 1599.00, '手机',40),('002','机械革命（MECHREVO）极光Pro游戏本', 6299.00 ,'笔记本电脑',10),('003', '雅戈尔夏季青年男 商务休闲短袖衬衫', 239.00, '男装',17),('004', '歌莉娅秋季新品 天丝套装（假两件上衣+压褶半裙）', 699.00 , '女装',15),('005', '真维斯服装', 200, 'c002',38),('006', '坚果炒货零食干果开心果腰果30包750g/箱', 68.80, '休闲零食',500),('007', '狗牙儿 比萨卷锅巴 披萨卷 怀旧休闲零食', 15.90, '休闲零食',10000),('008', '五粮液 52度浓香型白酒整箱', 198.00, '酒',40),('009', 'VANS范斯官方 Style 36寂静蓝美式经典男女板鞋', 519.00, '鞋子',25),('010', '卫龙辣条大面筋650g', 3, '休闲零食',30),('011', '农夫山泉', 2, '饮用水',999),('012', '香飘飘奶茶啵啵牛乳茶混合口味65g*12杯礼盒装', 66.99, '食用饮品',100),('013', '小浣熊干脆面', 1, '休闲零食',500);
